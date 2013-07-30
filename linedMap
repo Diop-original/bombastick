@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Directions service</title>
+    <link href="http://code.google.com//apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  	
+        <script src="js/bootstrap.min.js"></script>
+  
+    <script src="maps.js" language="JavaScript" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="panel" align="left">
+    <strong>Départ:</strong>
+      <select id="start" onchange="calcRoute();">
+        <option value="paris, idf">Paris</option>
+        <option value="barcelona, CT">Barcelone</option>
+        <option value="united kingdom, uk">Londres</option>
+        <option value="Berlin">Berlin</option>
+        <option value="belgium">Belgique</option>
+        <option value="norway">Norvege</option>
+        <option value="Italy">Italie</option>
+        
+      </select>
+      <strong>Arrivée :</strong>
+      <select id="end" onchange="calcRoute();">
+        <option value="paris, IDF">Paris</option>
+        <option value="barcelona, CT">Barcelone</option>
+        <option value="united kingdom, uk">Londres</option>
+        <option value="berlin">Berlin</option>
+        <option value="belgium">Belgique</option>
+        <option value="norway">Norvege</option>
+        <option value="Italy">Italie</option>
+      </select>
+      </div>
+  
+    <div id="map-canvas"></div>
+  </body>
+</html>
